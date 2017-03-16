@@ -17,5 +17,5 @@ return array(
     //'git' => 'git@bitbucket.org:wu_shuiyong/walden-markdown.git',
 
     // 2.好吧，如果实在不想加key，可以直接明文用户名密码认证的http(s)地址也可以。
-     'git' => 'https://zhaoshengjin:634630zh@github.com/meolu/Walden-markdown-demo.git',
+     'git' => 'https://zhaoshengjin:634630zh@github.com/zhaoshengjin/walden.git',
 );

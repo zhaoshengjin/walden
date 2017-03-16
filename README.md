@@ -1,86 +1,92 @@
-# Walden 最适合东半球同学使用的文档框架
+# summary
 
-[![Build Status](https://travis-ci.org/meolu/walden.svg?branch=master)](https://travis-ci.org/meolu/walden)
+* [最近更新](update.md)
+* [常见问题](qa.md)
+* [**新**openapi接入综述](openapi.md)
+* [旧天机接入综述](info.md)
+* [危险名单](blacklist.md)
+    * [130301 机构B黑名单（新）](blacklist/agentb_blacklistnew.md)
+    * [130400 机构G黑名单](blacklist/agentg_blacklist.md)        
+    * [170100 天网综合](blacklist/websearch_multisearch.md)      
+    * [140300 法海网法律名单](blacklist/fahai_lawblacklist.md)   
+    * [140600 法海网关键词检索](blacklist/fahai_keywordsearch.md)
+    * [140400 法海网涉诉详情](blacklist/fahai_blacklistdetail.md)
+    * [140100 汇法网法律灰名单](blacklist/huifa_lawblacklist.md) 
+    * [140200 汇法网法律详情](blacklist/huifa_blacklistdetail.md)
+    * [140200 汇法网关键字搜索](blacklist/huifa_keywordsearch.md)
+    * [140500 数信网的灰名单](blacklist/digcredit_blacklist.md)  
+    * [130100 天眼黑名单](blacklist/rong360_blacklist.md)        
+    * [200010 亿美黑名单](blacklist/yimei_blacklist.md)          
+    * [200020 百度黑名单](blacklist/baidu_blacklist.md)            
+    * [200003 百融特殊名单](blacklist/bairong_speciallist.md)                    
 
-或许是极人性化的一个文档管理框架，最适合部署在内网作为内网文档管理，url即目录层级。markdown+git+web搭配，让你一下子就喜欢上写文档分享。一分钟上手，有兴趣可挖掘隐藏技巧。
+* [身份验证](identify.md)
+    * [120400 考拉身份证照片查询](identify/kaola_idphoto.md)
+    * [110502 考拉身份验证](identify/kaola_idindentify.md)
+    * [110307 融360身份验证](identify/rong360_idindentify.md)
+    * [110103 融360银行卡3要素验证](identify/rong360_bankcard3item.md)
+    * [110201 考拉银行卡4要素验证](identify/kaola_bankcard4item.md)
+    * [110101 考拉银行卡3要素验证](identify/kaola_bankcard3item.md)
+    * [110001 考拉银行卡2要素验证](identify/kaola_bankcard2item.md)
+    * [110300 机构G身份验证](identify/zhongzhicheng_idindentify.md)
+    * [120200 机构C手机号查询](identify/agentc_enterprisemobileoppositecheck.md)
+    * [120300 机构C固话查询](identify/agentc_enterpriseteloppositecheck.md)
+    * [110301 机构C身份验证](identify/agentc_idindentify.md)
+    * [110400 机构C手机号验证](identify/agentc_mobilecheck2item.md)
+    * [110100 机构C手机号身份验证](identify/agentc_mobilecheck3item.md)
+    * [110000 机构C银行卡2要素验证](identify/agentc_bankcard2item.md)
+    * [110200 机构C银行卡4要素验证](identify/agentc_bankcard4item.md)
+    * [110100 机构C银行卡3要素验证](identify/agentc_bankcard3item.md)
+    * [120500 机构E信息认证综述](identify/agente_credit.md)
+    * [100400 机构F身份证ocr识别](identify/agentf_idcardocr.md)
+    * [100300 机构F银行卡ocr识别](identify/agentf_bankcardocr.md)
+    * [100200 机构F身份证照片对比](identify/agentf_idphotocomparision.md)
+    * [100100 机构F两张人脸照片对比](identify/agentf_verificationpics.md)
+    * [100600 机构F人脸照水印照对比](identify/agentf_verificationpicsofpolice.md)
+    * [110302 机构F身份证认证](identify/agentf_ididentify.md)
+    * [110202 通付盾银行卡四项验证](identify/tongfudun_bankcard4item.md)
+    * [110303 通付盾姓名身份证核验](identify/tongfudun_ididentify.md)
+    * [121000 机构I手机连续三个月缴费金额均值](identify/agenti_mobilepaymentin3monthsavglabel.md)  
+    * [110504 机构I手机号姓名身份证核验](identify/agenti_mobileverifyuseridcardinfo.md) 
+    * [110401 机构I手机号姓名核验](identify/agenti_mobileverifyusername.md)  
+    * [120700 机构I手机号当前状态](identify/agenti_mobilestate.md)                     
+    * [120800 机构I手机号当前在网时常](identify/agenti_mobiletimelengthlabel.md)  
+    * [121100 机构I手机号码停机次数](identify/agenti_mobilesuspendtimesin3monthslabel.md)
+    * [110600 机构I常用联系人验证](identify/agenti_mobilecommoncontactflag.md)         
+    * [120900 机构I手机号码换机频率](identify/agenti_mobileterminalchangefrequency.md)
+    * [121800 融360学历查询](identify/rong360_education.md)
+    * [121200 机构K手机号入网时长](identify/jiao_phonenetworklength.md)
+    * [110505 机构K三项验证](identify/jiao_mobilecheck3item.md)
+    * [200040 机构K二项验证](identify/jiao_mobilecheck2item.md)
+    * [121300 机构手机状态](identify/jiao_phonestatus.md)
+    * [121400 机构K手机消费记录](identify/jiao_phoneconsumption.md)
+    * [150300 天翼甜橙分](identify/tianyi_orangecredit.md)
+    * [100101 依图图片比对](identify/yitu_facerecognition.md)
+    * [100500 依图身份证OCR](identify/yitu_idcardocr.md)
+    * [122100 机构C车辆信息核查](identify/agentc_carcheck.md)
+    * [121900 机构C车辆违章信息核查](identify/agentc_vehicleviolationcheck.md)
+    * [122000 机构C驾驶证核查](identify/agentc_driverlicensecheck.md)
+    * [122200 机构J违章查询](identify/agentj_trafficviolation.md)
 
-[官网主页](http://www.huamanshu.com/walden.html) | [体验Demo](http://walden.huamanshu.com/) | 案例-[瓦力-walle](http://doc.huamanshu.com/瓦力/)
-
-## 演示
-![walden](https://raw.github.com/meolu/Walden/master/static/screenshots/walden.gif)
-
-
-## 特点
-
-* Markdown语法
-* 修改后实时展现，无编译
-* 多模板支持
-* 图片、附件上传，自动生成url
-* 多项目
-* 任意定义目录嵌套、定义文档，目录与文档均可中文（甚至推荐中文）
-* 文档、图片、附件同步保存至git，这下你安心了吧
-
-## 一、安装
-
-零安装、零配置，无数据库，不需要composer，开箱即用。只需要你有一台安装了git命令行，php5.3，nginx环境的linux机器。
-
-## 二、快速开始
-
-```php
-vi Config.php
-return [
-    // 项目留空保存文档和附件的git地址，可以是在github，好吧，不想公开，可以bitbucket。
-
-    // 1.php进程的用户的id_rsa.pub已添加到git的ssh-key。这样才可以推送markdown下的文件。
-    'git' => 'git@github.com:meolu/Walden-markdown-demo.git',
-
-    // 2.好吧，如果实在不想加key，可以直接明文用户名密码认证的http(s)地址也可以。
-    // 'git' => 'https://username:password@github.com/meolu/Walden-markdown-demo.git',
-];
-```
-
-## 三、nginx简单配置
-
-```
-server {
-    listen       80;
-    server_name  Walden.dev;
-    root /the/dir/of/Walden;
-    index index.php;
-
-    # 建议放内网做文档服务
-    #allow 192.168.0.0/24;
-    #deny all;
-
-    location / {
-        try_files $uri $uri/ /index.php$is_args$args;
-    }
-
-    location ~ \.php$ {
-        try_files $uri =404;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-    }
-}
-```
-
-
-## 自定义模板
-
-前端同学可以自己定义模板，在templates下新建一个模板目录，包含预览模板：`markdown-detail-view.php`，编辑模板：`markdown-editor-view.php`，然后修改`Config.php`的`template`为你的模板项目。
-
-最后，当然希望你可以给此项目提个pull request，目前只有一个bootstrap的默认模板：(
-
-
-## to do list
-
-* 文档搜索
-* 文档删除，重命名UI化
-
-
-## CHANGELOG
-瓦尔登的版本记录：[CHANGELOG](https://github.com/meolu/walden/blob/master/CHANGELOG.md)
-
-
-
+* [互联网报告](crawl.md)
+    * [160900 互联网认证/报告](crawl/tianjireport_collectuser.md)
+* [内部数据报告](inner.md)
+    * [151500 融360个人信贷风险报告接口](inner/tianjireport_personalloanriskreport.md)    
+    * [151501 西瓜分接口](inner/tianjiscore_xgscore.md)    
+    * [151502 资金方版西瓜分](inner/tianjiscore_xgscorecapital.md)    
+    * [151503 信用贷西瓜分plus版](inner/tianjiscore_xgscoreplus.md)    
+    * [151600  融360个人信贷风险报告接口定制版本](inner/rong360_personalloanriskreport.md)    
+* [信用报告](credit.md)
+    * [150000 银联智策银行流水](report/zhice_bankinfo.md)                   
+    * [150100 机构d报告查询](report/agentd_report.md)
+    * [180200 聚信立报告查询](report/juxinli_credit.md)
+    * [极光策略查询接口](report/jiguang_policy.md)
+    * [151400 机构J联通金融画像](report/agentj_bankrecordofunicom.md)  
+    * [150500 汇百川信用分](report/huibaichuan_credit.md)             
+    * [150900 银联智惠账单真伪校验](report/zhihui_personalverify.md)    
+    * [151000 友盟模型报告](report/umeng_score.md)
+    * [200005 百融用户稳定性评估](report/bairong_userstability.md)
+    * [200007 百融收支等级评估](report/bairong_balanceofpay.md)
+    * [200009 百融信用分](report/bairong_icredit.md)
+    * [200004 百融多次申请查询](report/bairong_applyloan.md)
+    * [122400 极光数据标签服务接口](report/jiguang_datatag.md)
